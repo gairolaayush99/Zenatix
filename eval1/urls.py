@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from django.urls import include
+from . import api
+
+
+
 
 urlpatterns = [
     path('', views.home),   
@@ -27,5 +31,12 @@ urlpatterns = [
     path('history',views.history),
     path('edit/<slug:product_id>',views.edit),
     path('signup/',include('signup.urls')),
-    path('AddIngredients', views.AddIngredients)
+    path('AddIngredients', views.AddIngredients),
+    path('api/AddIngredients',api.AddIngredients),
+    path('api/history',api.history),
+    path('api/supply',api.Supply),
+    path('api/products',api.product),
+    path('api/ingredient',api.Ingredient),
+    path('api/inventory',api.inventory),
+
 ]

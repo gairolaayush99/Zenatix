@@ -60,7 +60,7 @@ def Supply(request):
         Ingredient=request.POST['Ingredients']
         Price=request.POST['Price']
         Weight = request.POST['Weight']
-        product=Products(productname=Name,ingredients=Ingredient,price=Price,weight =Weight,order_id=Order_ID,date=timezone.now())
+        product=Products(productname=Name,ingredients=Ingredient,price=Price,weight =Weight,order_id=Order_ID)
         product.save()
         prdcts=Products.objects.all()
         return render(request,'prdctlst.html',{'data':prdcts})
@@ -89,14 +89,12 @@ def edit(request,product_id):
         Name=request.POST['Name']
         Phone=request.POST['PHONE']
         Adress=request.POST['Adress']
-        history=History(name=Name,phone=Phone,adress=Adress,productname=ProductName,ingredients=Ingredients,price=Price,weight =Weight,order_id=Order_ID,date=timezone.now())
+        history=History(name=Name,phone=Phone,adress=Adress,productname=ProductName,ingredients=Ingredients,price=Price,weight =Weight,order_id=Order_ID)
         history.save()
         instance = Products.objects.get(id=product.id)
         instance.delete()
         return render(request,"bill.html",{'data':product})
 
-def Ingredient(request):
-    return render(request,"Ingredients.html")
 
 def AddIngredients(request):
     if request.method == "POST":
