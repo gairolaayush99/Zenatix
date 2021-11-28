@@ -1,5 +1,5 @@
-# Farmer-s-App
-A farmer business website
+# Zenatix
+A Bakers business website
 
 
 # Steps to run
