@@ -12,9 +12,14 @@ A farmer business website
 
 
 # api Endpoint
-1)Add Ingredients      http://localhost:8000/api/AddIngredients
-2)Display Ingredients  http://localhost:8000/api/ingredient
-3)Add baked Products   http://localhost:8000/api/supply
-4)Display Products     http://localhost:8000/api/products
-5)Purchase items       http://localhost:8000/api/inventory
-6)Display history      http://localhost:8000/api/history
+1) Clone the repository
+2) Display Ingredients  http://localhost:8000/api/ingredient
+3) Add baked Products   http://localhost:8000/api/supply
+4) Display Products     http://localhost:8000/api/products
+5) Purchase items       http://localhost:8000/api/inventory
+6) Display history      http://localhost:8000/api/history
+
+
+
+
+
