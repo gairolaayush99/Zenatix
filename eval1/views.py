@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Sign,Products,History,Ingredients
+from .models import Products,History,Ingredients
 from django.utils import timezone
 import datetime
 from .form import ProducteditForm
